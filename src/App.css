@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+#root {
+    flex-direction: column;
+    border: 2px solid #48cae4;
+    height: 100%;
+    width: 700px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14213d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-item {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    bottom: 34px;
+    width: 700px;
+    height: 200px;
+    background-color: #fca311;
+    color: #14213d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.msg-input {
+    height: 80px;
+    width: 249px;
 }
 
-.App-link {
-  color: #61dafb;
+.name-input {
+    height: 25px;
+    width: 249px;
+    margin-left: 23px;
+    margin-bottom: 9px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.send-btn {
+    height: 35px;
+    width: 88px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 140px;
 }
+
+.message-box {
+    border: 2px solid #e5e5e5;
+    border-radius: 15px 70px;
+    background-color: #000;
+    color: snow;
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+/* .delete-btn {
+    height: 25px;
+    width: 70px;
+    font-size: large;
+    font-weight: bold;
+} */
