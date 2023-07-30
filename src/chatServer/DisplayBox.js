@@ -33,13 +33,21 @@ const DisplayBox = () => {
       {messages.map((msg, index) => (
         <div className="message-box">
           <div key={msg.id} className="name">
-            {` ${msg.from}`}
+            {` ${msg.from},`}
           </div>
+          <br />
           <div className="message">{` ${msg.text}`}</div>
-          <PostNewMessage onActionHandler={onActionHandler} />
-          <DeleteMessage id={msg.id} onDelete={onDeleteHandler} />
+          <br />
+          {/* <br /> */}
+          <div>{msg.timeSent}</div>
+          <dive>
+            <DeleteMessage id={msg.id} onDelete={onDeleteHandler} />
+          </dive>
         </div>
       ))}
+      <div>
+        <PostNewMessage onActionHandler={onActionHandler} />
+      </div>
     </div>
   );
 };
