@@ -6,7 +6,7 @@ const DeleteMessage = ({ id, onDelete }) => {
 
   const toDeleteMessage = async () => {
     try {
-      const res = await axios.delete(url);
+      const res = await axios.delete(url );
       if (res.status === 200) {
         console.log("message with the ID has been deleted");
       } else {
