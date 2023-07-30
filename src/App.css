@@ -39,6 +39,7 @@ body {
     width: 249px;
     border: 2px solid #f2cc8f;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .name-input {
@@ -47,6 +48,7 @@ body {
     margin-left: 35px;
     margin-bottom: 9px;
     border: 2px solid #f2cc8f;
+    cursor: pointer;
 }
 
 .send-btn {
@@ -58,6 +60,7 @@ body {
     color: #3d405b;
     border: 2px solid #f2cc8f;
     background-color: #f4f1de;
+    cursor: pointer;
 }
 
 .message-box {
@@ -79,6 +82,7 @@ body {
     background-color: #3d405b ;
     color: #f4f1de;
     border: 1px solid #f2cc8f;
+    cursor: pointer;
 }
 
 .message {
