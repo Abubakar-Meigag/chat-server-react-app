@@ -2,13 +2,20 @@
     flex-direction: column;
     height: 100%;
     width: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 600px;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #14213d;
+    background: url(./imeage/mika-baumeister-Bv_PMxkprVQ-unsplash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .input-item {
@@ -16,25 +23,30 @@ body {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    position: static;
-    bottom: 34px;
+    position: fixed;
+    bottom: 0px;
     width: 699px;
     height: 170px;
-    background-color: #fca311;
-    color: #14213d;
-    border-radius:  70px 15px;
+    background-color: #3d405b;
+    color: #f2cc8f;
+    font-weight: bolder;
+    border-radius: 70px 15px;
+    border: 2px solid #f2cc8f;
 }
 
 .msg-input {
     height: 50px;
     width: 249px;
+    border: 2px solid #f2cc8f;
+    margin-left: 10px;
 }
 
 .name-input {
     height: 25px;
     width: 249px;
-    margin-left: 23px;
+    margin-left: 35px;
     margin-bottom: 9px;
+    border: 2px solid #f2cc8f;
 }
 
 .send-btn {
@@ -43,16 +55,18 @@ body {
     font-size: x-large;
     font-weight: bold;
     margin-left: 140px;
+    color: #3d405b;
+    border: 2px solid #f2cc8f;
+    background-color: #f4f1de;
 }
 
 .message-box {
-    border: 2px solid #e5e5e5;
+    border: 4px solid #e07a5f;
     border-radius: 15px 70px;
-    background-color: #000;
-    color: snow;
+    background-color: #f4f1de;
     padding: 20px;
     margin-bottom: 10px;
-    height:calc(100% - 699px);
+    height: calc(100% - 699px);
 }
 
 .delete-btn {
@@ -62,8 +76,18 @@ body {
     font-weight: bold;
     margin-left: 600px;
     position: static;
+    background-color: #3d405b ;
+    color: #f4f1de;
+    border: 1px solid #f2cc8f;
 }
 
 .message {
     margin-top: 7px;
+    color: #14213d;
+    font-size: large;
+}
+.name {
+    font-weight: bolder;
+    color: #14213d;
+    font-size: larger;
 }
