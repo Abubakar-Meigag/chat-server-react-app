@@ -11,7 +11,7 @@ const PostNewMessage = ({ onActionHandler }) => {
     e.preventDefault();
     try {
       const res = await axios.post(url, { from, text });
-      if (res.status === 200) {
+      if (res.status === 201) {
         console.log("message sent successfully");
       } else {
         console.error("message sent failed");
